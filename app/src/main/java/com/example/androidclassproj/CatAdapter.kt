@@ -22,6 +22,7 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
         holder.catName.text = cat.name
         holder.catAge.text = cat.age.toString()
         holder.catBreed.text = cat.breed
+        holder.catColor.text = cat.color
     }
 
     class CatViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -29,5 +30,6 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
         val catName: TextView = itemView.findViewById(R.id.cat_name)
         val catAge: TextView = itemView.findViewById(R.id.cat_age)
         val catBreed: TextView = itemView.findViewById(R.id.cat_breed)
+        val catColor: TextView = itemView.findViewById(R.id.cat_color)
     }
 }
