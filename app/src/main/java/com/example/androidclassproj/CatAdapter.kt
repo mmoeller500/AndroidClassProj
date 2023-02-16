@@ -32,9 +32,11 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
             detailFragment.arguments = bundle
 
             val activity = view.context as AppCompatActivity
+
             activity.supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 replace(R.id.fragment_container_view, detailFragment)
+                addToBackStack(null)
             }
         }
     }
