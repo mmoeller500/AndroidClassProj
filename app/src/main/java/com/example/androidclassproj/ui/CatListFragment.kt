@@ -36,6 +36,9 @@ class CatListFragment : Fragment() {
         cats.add(Cat("Sphinx", "Pink", "Monster", 8, R.drawable.catttttt))
         cats.add(Cat("British Shorthair", "Gray", "Cheezburger", 20, R.drawable.catttttt))
 
+        //github just deleted a day of progress. Awesome!
+
+
         val adapter = CatAdapter(cats)
         recyclerView.adapter = adapter
 
