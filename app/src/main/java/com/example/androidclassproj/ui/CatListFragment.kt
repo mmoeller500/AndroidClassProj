@@ -26,17 +26,15 @@ class CatListFragment : Fragment() {
         val cats = mutableListOf<Cat>()
 
         cats.add(Cat("Tabby", "Orange", "Bertie", 6, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Tabby", "Orange", "Belka", 5, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Siamese", "White", "Bean", 1, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Tabby", "Gray", "Basil", 4, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Tabby", "Brown", "John", 13, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Shorthair", "Black", "Snick", 18, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Calico", "Orange+Black", "Iris", 4, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Shorthair", "Gray+White", "Barry", 7, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("Sphinx", "Pink", "Monster", 8, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
-        cats.add(Cat("British Shorthair", "Gray", "Cheezburger", 20, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Tabby", "Orange", "Belka", 5, "https://cdn.discordapp.com/attachments/710398709598257235/1075870611441713273/image.png"))
+        cats.add(Cat("Siamese", "White", "Bean", 1, "https://cdn.discordapp.com/attachments/710398709598257235/1075870773073412107/e08gjd.jpg"))
+        cats.add(Cat("Shorthair", "Black+White", "Frank", 8, "https://cdn.discordapp.com/attachments/710398709598257235/1075873383679537342/image.png"))
+        cats.add(Cat("Tabby", "Gray", "Basil", 4, "https://cdn.discordapp.com/attachments/710398709598257235/1075871097196658809/image.png"))
+        cats.add(Cat("British Shorthair", "Calico", "Aiko", 4, "https://cdn.discordapp.com/attachments/710398709598257235/1075872407815999580/image.png"))
+        cats.add(Cat("Tabby", "Gray+White", "GC", 3, "https://cdn.discordapp.com/attachments/710398709598257235/1075871535581122660/image.png"))
+        cats.add(Cat("Shorthair", "Black", "Snick", 18, "https://cdn.discordapp.com/attachments/710398709598257235/1075871887894257816/image.png"))
+        cats.add(Cat("British Shorthair", "Gray", "Cheezburger", 20, "https://cdn.discordapp.com/attachments/710398709598257235/1075872700708438026/image.png"))
 
-        //github just deleted a day of progress. Awesome!
 
 
         val adapter = CatAdapter(cats)

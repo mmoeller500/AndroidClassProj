@@ -64,7 +64,6 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
         val catAge: TextView = itemView.findViewById(R.id.cat_age)
         val catBreed: TextView = itemView.findViewById(R.id.cat_breed)
         val catColor: TextView = itemView.findViewById(R.id.cat_color)
-
         init {
             itemView.setOnClickListener {
                 onItemClick(adapterPosition)

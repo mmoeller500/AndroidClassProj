@@ -16,7 +16,6 @@ class CatDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_cat_detail, container, false)
-
         if (arguments != null) {
             val name = requireArguments().getString("name")
             val breed = requireArguments().getString("breed")
