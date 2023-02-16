@@ -37,7 +37,7 @@
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/cat_name"
             app:layout_constraintStart_toStartOf="@id/cat_name"/>
-
+<!--
         <TextView
             android:id="@+id/cat_breed"
             android:layout_width="wrap_content"
@@ -46,6 +46,7 @@
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/cat_age"
             app:layout_constraintStart_toStartOf="@id/cat_age"/>
+-->
 
         <TextView
             android:id="@+id/cat_color"
@@ -53,8 +54,8 @@
             android:layout_height="wrap_content"
             tools:text="Orange"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/cat_breed"
-            app:layout_constraintStart_toStartOf="@id/cat_breed"/>
+            app:layout_constraintTop_toBottomOf="@id/cat_age"
+            app:layout_constraintStart_toStartOf="@id/cat_age"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

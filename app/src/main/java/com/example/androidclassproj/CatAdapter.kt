@@ -51,7 +51,7 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
             .into(holder.catImage)
         holder.catName.text = cat.name
         holder.catAge.text = cat.age.toString()
-        holder.catBreed.text = cat.breed
+        //holder.catBreed.text = cat.breed
         holder.catColor.text = cat.color
     }
 
@@ -62,7 +62,7 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
         val catImage: ImageView = itemView.findViewById(R.id.cat_image)
         val catName: TextView = itemView.findViewById(R.id.cat_name)
         val catAge: TextView = itemView.findViewById(R.id.cat_age)
-        val catBreed: TextView = itemView.findViewById(R.id.cat_breed)
+        //val catBreed: TextView = itemView.findViewById(R.id.cat_breed)
         val catColor: TextView = itemView.findViewById(R.id.cat_color)
         init {
             itemView.setOnClickListener {
