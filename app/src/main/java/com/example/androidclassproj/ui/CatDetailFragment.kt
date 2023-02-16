@@ -21,7 +21,7 @@ class CatDetailFragment : Fragment() {
             val age = requireArguments().getString("age")
             val color = requireArguments().getString("color")
             val image = requireArguments().getString("image")
-    //test
+    //tests
 
         }
 
