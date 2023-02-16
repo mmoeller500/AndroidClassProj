@@ -23,7 +23,7 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
             val bundle = bundleOf(
                 "name" to cat.name,
                 "breed" to cat.breed,
-                "age" to cat.age,
+                "age" to cat.age.toString(),
                 "color" to cat.color,
                 "image" to cat.image
             )

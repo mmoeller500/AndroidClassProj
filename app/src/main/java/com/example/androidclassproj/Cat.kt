@@ -5,5 +5,5 @@ data class Cat(
     val color: String,
     val name: String,
     val age: Int,
-    val image: Int,
+    val image: String,
 )

@@ -25,16 +25,16 @@ class CatListFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         val cats = mutableListOf<Cat>()
 
-        cats.add(Cat("Tabby", "Orange", "Bertie", 6, R.drawable.catttttt))
-        cats.add(Cat("Tabby", "Orange", "Belka", 5, R.drawable.catttttt))
-        cats.add(Cat("Siamese", "White", "Bean", 1, R.drawable.catttttt))
-        cats.add(Cat("Tabby", "Gray", "Basil", 4, R.drawable.catttttt))
-        cats.add(Cat("Tabby", "Brown", "John", 13, R.drawable.catttttt))
-        cats.add(Cat("Shorthair", "Black", "Snick", 18, R.drawable.catttttt))
-        cats.add(Cat("Calico", "Orange+Black", "Iris", 4, R.drawable.catttttt))
-        cats.add(Cat("Shorthair", "Gray+White", "Barry", 7, R.drawable.catttttt))
-        cats.add(Cat("Sphinx", "Pink", "Monster", 8, R.drawable.catttttt))
-        cats.add(Cat("British Shorthair", "Gray", "Cheezburger", 20, R.drawable.catttttt))
+        cats.add(Cat("Tabby", "Orange", "Bertie", 6, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Tabby", "Orange", "Belka", 5, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Siamese", "White", "Bean", 1, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Tabby", "Gray", "Basil", 4, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Tabby", "Brown", "John", 13, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Shorthair", "Black", "Snick", 18, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Calico", "Orange+Black", "Iris", 4, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Shorthair", "Gray+White", "Barry", 7, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("Sphinx", "Pink", "Monster", 8, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
+        cats.add(Cat("British Shorthair", "Gray", "Cheezburger", 20, "https://cdn.discordapp.com/attachments/710398709598257235/1075870042937368616/image.png"))
 
         //github just deleted a day of progress. Awesome!
 

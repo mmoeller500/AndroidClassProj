@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.androidclassproj.R
+import com.bumptech.glide.Glide
 
 class CatDetailFragment : Fragment() {
 
@@ -21,8 +23,16 @@ class CatDetailFragment : Fragment() {
             val age = requireArguments().getString("age")
             val color = requireArguments().getString("color")
             val image = requireArguments().getString("image")
-    //tests
 
+            view.findViewById<TextView>(R.id.cat_name).text = name
+            view.findViewById<TextView>(R.id.cat_breed).text = "Breed: $breed"
+            view.findViewById<TextView>(R.id.cat_age).text = "Age: $age"
+            view.findViewById<TextView>(R.id.cat_color).text = "Color: $color"
+
+            Glide
+                .with(this)
+                .load(image)
+                .into(view.findViewById(R.id.cat_image))
         }
 
         return view
