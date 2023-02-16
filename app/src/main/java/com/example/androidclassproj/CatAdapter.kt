@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.fragment.app.commit
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.androidclassproj.ui.CatDetailFragment
 
 class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.CatViewHolder>() {
@@ -42,7 +43,10 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
 
     override fun onBindViewHolder(holder: CatViewHolder, position: Int) {
         val cat = cats[position]
-        holder.catImage.setImageResource(cat.image)
+        Glide
+            .with(holder.itemView.context)
+            .load(cat.image)
+            .into(holder.catImage)
         holder.catName.text = cat.name
         holder.catAge.text = cat.age.toString()
         holder.catBreed.text = cat.breed
@@ -60,9 +64,9 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
         val catColor: TextView = itemView.findViewById(R.id.cat_color)
 
         init {
-            itemView.setOnClickListener(
+            itemView.setOnClickListener {
                 onItemClick(adapterPosition)
-            )
+            }
         }
     }
 }
