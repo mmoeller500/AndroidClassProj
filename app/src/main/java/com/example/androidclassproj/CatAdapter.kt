@@ -54,7 +54,6 @@ class CatAdapter(private val cats: List<Cat>) : RecyclerView.Adapter<CatAdapter.
         //holder.catBreed.text = cat.breed
         holder.catColor.text = cat.color
     }
-
     inner class CatViewHolder(
         itemView: View,
         private val onItemClick: (adapterPosition: Int) -> Unit
